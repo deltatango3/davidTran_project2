@@ -1,0 +1,42 @@
+nav {
+  background-color: #fff;
+  padding: 1rem 0;
+  position: relative;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.mobile-nav {
+  display: none;
+  &__toggle {
+    opacity: 0;
+    &+label::after {
+      content: '\2630';
+      font-size: 2rem;
+    }
+  }
+}
+
+.nav--mobile {
+  @include position(0, 0, 0, 0);
+  
+}
+
+.header__hero {
+  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)), url(../assets/image-1.jpeg) center;
+  background-size: cover;
+  height: 100vh;
+  max-height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__heading--small {
+    font-size: 2rem;
+    display: block;
+    padding: 1rem 0;  
+  }
+}
+
+

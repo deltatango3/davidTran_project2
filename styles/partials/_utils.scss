@@ -1,4 +1,25 @@
+// COLORS
 $dark-blue: #0e5f88;
 $light-blue: #8ecceb;
 $primary-black: #1d1d1d;
-$blue-cta-font: #efeeee;
+$blue-button-font: #efeeee;
+
+// FONT-FAMILIES
+$montserrat: 'Montserrat', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+
+// MEDIA QUERIES
+$tablet: 500px;
+
+// MIXINS
+
+@mixin position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+
+
