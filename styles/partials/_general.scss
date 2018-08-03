@@ -6,12 +6,16 @@ body {
   font-size: 1.6rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -42,21 +46,4 @@ li {
   display: inline-block;
 }
 
-.tout {
-  padding: 5rem 0;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  &-heading {
-    color: $main-black;
-    &--blue {
-      color: $dark-blue;
-    }
-  }
-  &-blurb {
-    color: #5d5d5d;
-  }
-}
 
