@@ -8,20 +8,13 @@ nav {
   }
 }
 
-// .logo {
-//   // z-index: 10;
-// }
-
 .mobile-nav {
   display: block;
   &__toggle {
-    // opacity: 0;
-    &+label::after {
+    opacity: 0;
+    &__label::after {
       content: '\2630';
       font-size: 2rem;
-      // position: absolute;
-      // right: 1rem;
-      // z-index: 10;
     }
   }
 }
@@ -30,8 +23,7 @@ nav {
   @include position(100%, 0, 0, 0);
   background-color: #fff;
   height: 0;
-  // min-height: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -46,8 +38,9 @@ nav {
     content: '\2573';
   }
   &~ .nav--mobile {
+    display: flex;
     height: 100vh;
-    // min-height: 400px;
+    min-height: 400px;
     opacity: 1;
   }
 }
@@ -65,6 +58,10 @@ nav {
     display: block;
     padding: 1rem 0;  
   }
+  &__wrapper {
+    flex: 0 0 50%;
+  }
+
 }
 
 
