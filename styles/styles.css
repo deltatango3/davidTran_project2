@@ -150,6 +150,11 @@ h1 {
   font-weight: 600;
   letter-spacing: 1px; }
 
+.nav--mobile__item {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
 html {
   font-size: 62.5%; }
 
@@ -194,19 +199,43 @@ nav {
     justify-content: space-between; }
 
 .mobile-nav {
-  display: none; }
-  .mobile-nav__toggle {
-    opacity: 0; }
-    .mobile-nav__toggle + label::after {
-      content: '\2630';
-      font-size: 2rem; }
+  display: block; }
+  .mobile-nav__toggle + label::after {
+    content: '\2630';
+    font-size: 2rem; }
 
 .nav--mobile {
   position: absolute;
-  top: 0;
+  top: 100%;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  background-color: #fff;
+  height: 0;
+  min-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0; }
+  .nav--mobile__item {
+    padding-bottom: 1.5rem; }
+
+input#mobile-nav__toggle:checked + label::after {
+  content: '\2573'; }
+
+input#mobile-nav__toggle:checked ~ .nav--mobile {
+  height: 100vh;
+  opacity: 1; }
 
 .header__hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.1))), url(../assets/image-1.jpeg) center;
@@ -215,7 +244,7 @@ nav {
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)), url(../assets/image-1.jpeg) center;
   background-size: cover;
   height: 100vh;
-  max-height: 550px;
+  max-height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
