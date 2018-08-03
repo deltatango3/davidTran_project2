@@ -5,6 +5,13 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: $montserrat;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .logo {
   font-family: $montserrat;
   text-transform: uppercase;
@@ -15,6 +22,7 @@ h1 {
 .button {
   text-transform: uppercase;
   font-family: $montserrat;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -23,4 +31,9 @@ h1 {
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.tout-blurb {
+  font-size: 1.4rem;
+  font-weight: 300;
 }
