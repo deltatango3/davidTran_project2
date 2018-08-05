@@ -25,16 +25,21 @@
       font-style: italic;
     }
   }
-  &-tile {
-    margin-bottom: 5rem;
-    &--last {
-      margin-bottom: 0;
-    }
-    &--image {
-      // display: none;
-      background: url(../assets/image-10.jpeg) no-repeat center;
-      background-size: cover;
-    }
+}
+
+.tout-tile {
+  margin-bottom: 5rem;
+  flex: 1 0 100%;
+  &--last {
+    margin-bottom: 0;
+  }
+  &--image {
+    display: none;
+    flex: 1 0 100%;
+  }
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -126,5 +131,18 @@
   &__image {
     width: 30%;
     max-width: 150px;
+  }
+}
+
+.tout--contact {
+  background-color: $light-blue;
+}
+
+.team-tiles {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+  &__image {
+    display: flex;
   }
 }

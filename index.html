@@ -13,7 +13,7 @@
 
   <header>
     <nav>
-      <div class="wrapper">
+      <div class="wrapper spacer">
         <div class="logo">
           <a href="#">Corporate</a>
         </div>
@@ -38,7 +38,7 @@
       </div>
     </nav>
     <div class="header__hero">
-      <div class="wrapper header__hero__wrapper">
+      <div class="wrapper spacer header__hero__wrapper">
         <h1 class="header__hero__heading">Welcome <span class="header__hero__heading--small">to my corporate website</span></h1>
         <a class="button" href="#">Start</a>
       </div>
@@ -46,7 +46,7 @@
   </header>
 
   <section class="tout tout--learn-more">
-    <div class="wrapper">
+    <div class="wrapper spacer">
       <h2 class="tout-heading">Welcome to <span class="tout-heading--blue">Corporate</span></h2>
       <p class="tout-blurb">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum consequatur ab vel a iure quae quibusdam modi expedita reiciendis accusantium?</p>
       <a href="#" class="button">Know more</a>
@@ -79,7 +79,7 @@
   </section>
 
   <section class="tout tout--services">
-    <div class="wrapper">
+    <div class="wrapper spacer">
       <h2 class="tout-heading">Services</h2>
       <div class="features">
         <div class="features__tile">
@@ -123,7 +123,7 @@
   </section>
 
   <section class="tout tout--testimonials">
-    <div class="wrapper">
+    <div class="wrapper spacer">
       <h2 class="tout-heading tout-heading--light">People say about us</h2>
       <div class="testimonials">
         <div class="testimonials__image">
@@ -169,23 +169,66 @@
   <section class="tout tout--services">
     <div class="wrapper">
       <div class="tout-tile-row">
-        <div class="tout-tile">
+        <div class="tout-tile spacer">
           <h3 class="tout-tile__heading">Design</h3>
           <p class="tout-blurb--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
           <a href="#" class="button">More</a>
         </div>
-        <div class="tout-tile--image"></div>
+        <div class="tout-tile--image">
+          <img src="assets/image-10.jpeg" alt="">
+        </div>
       </div>
       <div class="tout-tile-row">
-        <div class="tout-tile tout-tile--last">
+        <div class="tout-tile--image">
+          <img src="assets/image-11.jpeg" alt="">
+        </div>
+        <div class="tout-tile tout-tile--last spacer">
           <h3 class="tout-tile__heading">Analytics</h3>
           <p class="tout-blurb--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
           <a href="#" class="button">More</a>
         </div>
-        <div class="tout-tile--image"></div>
       </div>
     </div>
   </section>
+
+  <section class="tout tout--contact">
+    <div class="wrapper spacer">
+      <h2 class="tout-heading">Ask a Question</h2>
+      <form action="POST" class="contact__form">
+        <input type="text" placeholder="Your Message" class="contact__form__input--text">
+        <input type="submit" class="button button--black button--borderless" name="contact-form-submit" id="contact-form-submit" value="Send">
+      </form>
+    </div>
+  </section>
+
+  <section class="tout tout--team">
+    <div class="wrapper">
+      <h2 class="tout-heading">Our Team</h2>
+      <div class="team-tiles">
+        <div class="team-tiles__image"><img src="assets/image-12.jpeg" alt=""></div>
+        <div class="team-tiles__image"><img src="assets/image-13.jpeg" alt=""></div>
+        <div class="team-tiles__image"><img src="assets/image-14.jpeg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-area">
+      <div class="footer-area__heading">Contact</div>
+      <p class="footer-area__blurb">infohackeryou.com</p>
+      <p class="footer-area__blurb">123-456-7890</p>
+      <p class="footer-area__blurb">Toronto</p>
+      <form action="" class="footer-area__contact-form">
+        <input type="email" class="footer-area__contact-form__email" placeholder="email address">
+      </form>
+    </div>
+    <div class="footer-area">
+      <div class="footer-area__heading">About Us</div>
+    </div>
+    <div class="footer-area">
+      <div class="footer-area__heading">Instagram</div>
+    </div>
+  </footer>
 
   
 </body>
