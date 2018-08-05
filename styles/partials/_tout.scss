@@ -11,9 +11,19 @@
     &--blue {
       color: $dark-blue;
     }
+    &--light {
+      color: $text-grey;
+    }
   }
   &-blurb {
     color: #5d5d5d;
+    line-height: 1.5;
+    &--light {
+      color: $text-grey;
+    }
+    &--italic {
+      font-style: italic;
+    }
   }
 }
 
@@ -88,5 +98,22 @@
         top: 5px;
       }
     }
+  }
+}
+
+.tout--testimonials {
+  background-color: $main-black;
+  & .tout-blurb {
+    margin-bottom: 0;   
+  }
+}
+
+.testimonials {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  &__image {
+    width: 30%;
+    max-width: 150px;
   }
 }
