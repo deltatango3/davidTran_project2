@@ -25,6 +25,17 @@
       font-style: italic;
     }
   }
+  &-tile {
+    margin-bottom: 5rem;
+    &--last {
+      margin-bottom: 0;
+    }
+    &--image {
+      // display: none;
+      background: url(../assets/image-10.jpeg) no-repeat center;
+      background-size: cover;
+    }
+  }
 }
 
 .half-tile {

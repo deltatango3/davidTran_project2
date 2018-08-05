@@ -39,6 +39,13 @@ h3 {
   text-transform: uppercase;
 }
 
+.tout-tile__heading {
+  text-transform: uppercase;
+  &--lowercase {
+    text-transform: none;
+  }
+}
+
 .tout-blurb {
   font-size: 1.4rem;
   font-weight: 300;
