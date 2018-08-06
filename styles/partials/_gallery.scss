@@ -11,7 +11,13 @@
     background-position: center;
     background-size: cover;
     color: $text-grey;
-    &--1 {
+    @media (min-width: $tablet) {
+      flex-basis: 50%;
+    }
+    @media (min-width: $desktop) {
+      flex-basis: 25%;
+    }
+     &--1 {
       background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-6.jpeg);
     }
     &--2 {

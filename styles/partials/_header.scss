@@ -61,6 +61,9 @@ nav {
   }
   &__wrapper {
     flex: 0 0 50%;
+    @media (min-width: $tablet) {
+      flex-basis: 80%;
+    }
   }
 
 }

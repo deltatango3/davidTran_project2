@@ -2,17 +2,91 @@ footer {
   background-color: $main-black;
   color: #fff;
   padding: 4rem 0;
+  & input::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+}
+
+.footer {
+  &--top {
+    @media (min-width: $desktop) {
+      display: flex;
+    }
+  }
+}
+
+.footer-area__blurb-before {
+  content: '';
+  display: block;
+  height: auto;
+  width: 12px;
+  @include position(0, 0, 0, 0);
 }
 
 .footer-area {
   margin-bottom: 4rem;
+  @media (min-width: $desktop) {
+    flex: 1 0 30%;
+  }
   &__heading {
     margin-bottom: 2rem;
   }
   &__blurb {
     margin: 0;
+    position: relative;
     &:last-of-type {
       margin-bottom: 1.5rem;
     }
+    &--email::before {
+      @extend .footer-area__blurb-before;
+      content: '';
+      background: url(../assets/envelope-regular.svg) no-repeat center;
+    }
+    &--phone::before {
+      @extend .footer-area__blurb-before;
+      background: url(../assets/phone-solid.svg) no-repeat center;
+    }
+    &--location::before {
+      @extend .footer-area__blurb-before;
+      background: url(../assets/map-marker-alt-solid.svg) no-repeat center;
+    }
   }
+}
+
+.footer-area--contact .footer-area__blurb {
+  padding-left: 2rem;
+}
+
+.footer-area__contact-form__email {
+  background-color: black;
+  border: 1px solid white;
+  padding: .5rem 2rem .5rem 1rem; 
+  font-size: 1rem;
+  color: #fff;
+  width: 250px;
+}
+
+.footer-area--about {
+  @media (min-width: $desktop) {
+    padding-right: 6rem;
+  }
+}
+
+.footer-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  &__item {
+    flex: 1 0 20%;
+    display: flex;
+    margin: 0 1rem 1rem 0;
+    &:nth-child(4n+4) {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer-legal {
+  @extend .footer-area__blurb;
 }

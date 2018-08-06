@@ -3,6 +3,9 @@ h1 {
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
+  @media (min-width: $desktop) {
+    font-size: 6rem;
+  }
 }
 
 h2 {
@@ -85,8 +88,4 @@ h3 {
 
 .footer-area--about .footer-area__blurb {
   line-height: 1.5;
-}
-
-.footer-legal {
-  @extend .footer-area__blurb;
 }
