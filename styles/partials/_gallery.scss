@@ -18,22 +18,60 @@
       flex-basis: 25%;
     }
      &--1 {
-      background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-6.jpeg);
+      background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $gallery-tile-1;
+      @media (min-width: $desktop) {
+        background-image: $gallery-tile-1;
+      }
     }
     &--2 {
-      background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-7.jpeg);
+      background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $gallery-tile-2;
+      @media (min-width: $desktop) {
+        background-image: $gallery-tile-2;
+      }
     }
     &--3 {
-     background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-8.jpeg);
+      background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $gallery-tile-3;
+      @media (min-width: $desktop) {
+        background-image: $gallery-tile-3;
+      }
     }
     &--4 {
-     background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-9.jpeg);
+      background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $gallery-tile-4;
+      @media (min-width: $desktop) {
+        background-image: $gallery-tile-4;
+      }
     }
     &__content {
       text-align: center;
       border: 1px solid $text-grey;
       border-radius: 10px;
       padding: 3rem 1rem;
+      @media (min-width: $desktop) {
+        visibility: hidden;
+      }
     }
   }
 }
+
+/* HOVER */
+.gallery__item:hover .gallery__item__content {
+  visibility: visible;
+}
+
+.gallery__item {
+  &--1:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $gallery-tile-1;
+  }
+  &--2:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $gallery-tile-2;
+  }
+  &--3:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $gallery-tile-3;
+  }
+  &--4:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $gallery-tile-4;
+  }
+}
+
+
+

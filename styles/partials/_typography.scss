@@ -42,6 +42,11 @@ h3 {
   text-transform: uppercase;
 }
 
+.tout-heading--left {
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
+}
 .tout-tile__heading {
   text-transform: uppercase;
   &--lowercase {
@@ -69,6 +74,19 @@ h3 {
 
 .gallery__item__heading {
   text-transform: uppercase;
+}
+
+.team-tiles__info {
+  &__name {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: $montserrat;
+  }
+  &__profession {
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
 }
 
 .contact__form__input--text {
