@@ -17,12 +17,20 @@
   }
   &-blurb {
     color: #5d5d5d;
-    line-height: 1.5;
     &--light {
       color: $text-grey;
     }
     &--italic {
       font-style: italic;
+    }
+  }
+}
+
+.tout--learn-more, .tout--testimonials {
+  & .tout-blurb {
+    @media (min-width: $desktop) {
+      width: 70%;
+      margin: 2.5rem auto;
     }
   }
 }
@@ -36,6 +44,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  &__heading {
+    position: relative;
+    display: inline-block;
   }
   &--last {
     margin-bottom: 0;
@@ -157,6 +169,34 @@
     max-width: 150px;
   }
 }
+
+.tout--services {
+  & .tout-blurb--small {
+    @media (min-width: $tablet) {
+      width: 70%;
+      margin: 2.5rem auto;
+    }
+  }
+}
+.tout-tile__heading--design--analytics {
+  font-family: $montserrat;
+  color: $text-grey;
+  position: absolute;
+  top: -3rem;
+  left: -7rem;
+  font-size: 7rem;
+}
+
+.tout-tile__heading--design::before {
+  content: '1.';
+  @extend .tout-tile__heading--design--analytics;
+}
+
+.tout-tile__heading--analytics::before {
+  content: '2.';
+  @extend .tout-tile__heading--design--analytics;
+}
+
 
 .tout--contact {
   background-color: $light-blue;

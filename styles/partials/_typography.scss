@@ -50,9 +50,12 @@ h3 {
 }
 
 .tout-blurb {
+  font-family: $opensans;
   font-size: 1.4rem;
   font-weight: 300;
+  line-height: 1.5;
   &--small {
+    font-family: $opensans;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5;
@@ -80,6 +83,7 @@ h3 {
     font-weight: 600;
   }
   &__blurb {
+    font-family: $opensans;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 2;
@@ -88,4 +92,26 @@ h3 {
 
 .footer-area--about .footer-area__blurb {
   line-height: 1.5;
+}
+
+.footer-logo {
+  font-family: $montserrat;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600px;
+  letter-spacing: 1px;
+}
+
+.footer-nav__items {
+  font-family: $opensans;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.footer-legal {
+  font-family: $opensans;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2;
 }
