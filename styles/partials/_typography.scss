@@ -70,3 +70,23 @@ h3 {
   font-size: 1.4rem;
   font-weight: 600;
 }
+
+.footer-area {
+  &__heading {
+    @extend .features__tile__heading;
+    font-weight: 600;
+  }
+  &__blurb {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2;
+  }
+}
+
+.footer-area--about .footer-area__blurb {
+  line-height: 1.5;
+}
+
+.footer-legal {
+  @extend .footer-area__blurb;
+}

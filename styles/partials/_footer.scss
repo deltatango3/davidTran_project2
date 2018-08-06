@@ -1,0 +1,18 @@
+footer {
+  background-color: $main-black;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.footer-area {
+  margin-bottom: 4rem;
+  &__heading {
+    margin-bottom: 2rem;
+  }
+  &__blurb {
+    margin: 0;
+    &:last-of-type {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
