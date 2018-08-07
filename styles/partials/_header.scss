@@ -2,14 +2,30 @@ nav {
   background-color: #fff;
   padding: 1rem 0;
   position: relative;
+  @media (min-width: $desktop) {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    display: flex;
+  }
   .wrapper {
     display: flex;
     justify-content: space-between;
+    flex: 0 0 80%;
+  }
+}
+
+nav .logo {
+  @media (min-width: $desktop) {
+    flex: 1 0 30%;
   }
 }
 
 .mobile-nav {
   display: block;
+  @media (min-width: $desktop) {
+    display: none;
+  }
   &__toggle {
     opacity: 0;
     &__label::after {
@@ -45,6 +61,16 @@ nav {
   }
 }
 
+.nav--desktop {
+  display: none;
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 2 70%;
+  }
+}
+
 .header__hero {
   background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)), url(../assets/image-1.jpeg) center;
   background-size: cover;
@@ -54,6 +80,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: $desktop) {
+    max-height: none;
+    min-height: 450px;
+    height: 80vh;
+    background: url(../assets/image-1.jpeg) no-repeat center;
+    background-size: cover;
+  }
   &__heading--small {
     font-size: 2rem;
     display: block;

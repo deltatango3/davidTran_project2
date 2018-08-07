@@ -39,7 +39,7 @@ li {
 }
 
 .spacer {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .button {
@@ -48,6 +48,7 @@ li {
   color: $blue-button-font;
   border-radius: 6px;
   display: inline-block;
+  transition: background-color 300ms ease;
   &--black {
     background-color: $main-black;
     color: #fff;
@@ -55,6 +56,10 @@ li {
   &--borderless {
     border: none;
   }
+}
+
+.button:hover {
+  background-color: #36a5dd;
 }
 
 

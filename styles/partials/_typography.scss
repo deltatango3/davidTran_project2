@@ -42,6 +42,13 @@ h3 {
   text-transform: uppercase;
 }
 
+.nav--desktop__item {
+  font-family: $montserrat;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
 .tout-heading--left {
   @media (min-width: $desktop) {
     text-align: left;
