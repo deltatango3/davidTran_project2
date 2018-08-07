@@ -1,5 +1,11 @@
 html {
   font-size: 62.5%;
+  @media (min-width: 1600px) {
+    font-size: 80%;
+  }
+  @media (min-width: 2500px) {
+    font-size: 100%;
+  }
 }
 
 body {
@@ -36,6 +42,9 @@ li {
 .wrapper {
   max-width: 1080px;
   margin: 0 auto;
+  @media (min-width: 2500px) {
+    max-width: 1400px;
+  }
 }
 
 .spacer {
