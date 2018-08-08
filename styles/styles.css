@@ -447,6 +447,7 @@ nav {
   -ms-transform: scaleX(1);
   transform: scaleX(1); }
 
+/* HEADER HERO */
 .header__hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.1))), url(../assets/image-1.jpeg) center;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)), url(../assets/image-1.jpeg) center;
@@ -610,6 +611,10 @@ nav {
       -ms-flex: 1 0 30%;
       flex: 1 0 30%;
       margin-right: 20px; }
+      @media (min-width: 500px) {
+        .half-tile__content__image {
+          -ms-flex-preferred-size: 20%;
+          flex-basis: 20%; } }
 
 .half-tile--decorative {
   background: url(../assets/image-4.jpeg) no-repeat center;
@@ -962,6 +967,10 @@ nav {
     color: #1d1d1d;
     opacity: 1; }
 
+.hidden-label {
+  visibility: hidden;
+  height: 0; }
+
 /*FOOTER*/
 /* FOOTER */
 footer {
@@ -1048,10 +1057,10 @@ footer {
   position: relative; }
   .footer-area__contact-form__email {
     background-color: #1d1d1d;
+    color: #fff;
     border: 1px solid white;
     padding: 1rem 2rem 1rem 1rem;
     font-size: 1rem;
-    color: #fff;
     width: 250px; }
   .footer-area__contact-form__submit {
     background: none;

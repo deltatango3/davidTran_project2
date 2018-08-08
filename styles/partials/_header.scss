@@ -52,8 +52,6 @@ nav .logo {
   }
 }
 
-
-
 #mobile-nav__toggle:checked {
   &+label::after {
     content: '\2573';
@@ -92,6 +90,8 @@ nav .logo {
 .nav--desktop__item:focus:after {
   transform: scaleX(1);
 }
+
+/* HEADER HERO */
 
 .header__hero {
   background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)), url(../assets/image-1.jpeg) center;
