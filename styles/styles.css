@@ -846,9 +846,9 @@ nav {
     background-position: center;
     background-size: cover;
     color: #dfdede;
-    -webkit-transition: opacity 300ms ease;
-    -o-transition: opacity 300ms ease;
-    transition: opacity 300ms ease; }
+    -webkit-transition: visibility 300ms ease, opacity 300ms linear;
+    -o-transition: visibility 300ms ease, opacity 300ms linear;
+    transition: visibility 300ms ease, opacity 300ms linear; }
     @media (min-width: 500px) {
       .gallery__item {
         -ms-flex-preferred-size: 50%;
@@ -861,10 +861,7 @@ nav {
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../assets/image-6.jpeg);
       background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-6.jpeg);
       background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-6.jpeg);
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-6.jpeg);
-      -webkit-transition: all 300ms ease;
-      -o-transition: all 300ms ease;
-      transition: all 300ms ease; }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-6.jpeg); }
       @media (min-width: 850px) {
         .gallery__item--1 {
           background-image: url(../assets/image-6.jpeg); } }
@@ -897,13 +894,18 @@ nav {
       text-align: center;
       border: 1px solid #dfdede;
       border-radius: 10px;
-      padding: 3rem 1rem; }
+      padding: 3rem 1rem;
+      -webkit-transition: visibility 300ms ease, opacity 300ms linear;
+      -o-transition: visibility 300ms ease, opacity 300ms linear;
+      transition: visibility 300ms ease, opacity 300ms linear; }
       @media (min-width: 850px) {
         .gallery__item__content {
+          visibility: none;
           opacity: 0; } }
 
 /* HOVER */
 .gallery__item:hover .gallery__item__content {
+  visibility: visible;
   opacity: 1; }
 
 .gallery__item--1:hover {
