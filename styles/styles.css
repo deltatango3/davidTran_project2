@@ -317,10 +317,11 @@ li {
   .button--borderless {
     border: none; }
 
-.button:hover {
+.button:hover, .button:focus {
   background-color: #36a5dd; }
 
-.button--black:hover {
+.button--black:hover,
+.button--black:focus {
   background-color: #fff;
   color: #1d1d1d; }
 
@@ -437,7 +438,8 @@ nav {
       transition: transform 300ms ease-in, -webkit-transform 300ms ease-in; }
 
 /* HOVER */
-.nav--desktop__item:hover:after {
+.nav--desktop__item:hover:after,
+.nav--desktop__item:focus:after {
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1); }
@@ -672,7 +674,8 @@ nav {
         top: 5px; }
 
 /* HOVER */
-.features__tile:hover {
+.features__tile:hover,
+.feature__tile:focus {
   background-color: #8ecceb; }
 
 .tout--testimonials {
@@ -710,7 +713,7 @@ nav {
       -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
       right: -25%; }
-    .testimonials__arrow:hover {
+    .testimonials__arrow:hover, .testimonials__arrow:focus {
       border: solid #fff;
       border-width: 0 4px 4px 0; }
   .testimonials__image {
@@ -803,7 +806,8 @@ nav {
       margin: 0; }
 
 /* HOVER */
-.team-tiles__image:hover .team-tiles__info {
+.team-tiles__image:hover .team-tiles__info,
+.team-tiles__image:focus .team-tiles__info {
   visibility: visible;
   opacity: 1; }
 

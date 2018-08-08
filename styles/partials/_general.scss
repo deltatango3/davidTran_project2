@@ -67,11 +67,12 @@ li {
   }
 }
 
-.button:hover {
+.button:hover, .button:focus {
   background-color: #36a5dd;
 }
 
-.button--black:hover {
+.button--black:hover,
+.button--black:focus {
   background-color: #fff;
   color: $main-black;
 }

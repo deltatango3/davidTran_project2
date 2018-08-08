@@ -156,7 +156,8 @@
 }
 
 /* HOVER */
-.features__tile:hover {
+.features__tile:hover,
+.feature__tile:focus  {
   background-color: $light-blue;
 }
 
@@ -189,7 +190,7 @@
       transform: rotate(-45deg);
       right: -25%;
     }
-    &:hover {
+    &:hover, &:focus {
       border: solid #fff;
       border-width: 0 4px 4px 0;
     }
@@ -286,7 +287,8 @@
 
 /* HOVER */
 
-.team-tiles__image:hover .team-tiles__info {
+.team-tiles__image:hover .team-tiles__info,
+.team-tiles__image:focus .team-tiles__info {
   visibility: visible;
   opacity: 1;
 }

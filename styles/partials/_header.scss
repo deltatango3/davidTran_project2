@@ -87,7 +87,8 @@ nav .logo {
 
 /* HOVER */
 
-.nav--desktop__item:hover:after {
+.nav--desktop__item:hover:after,
+.nav--desktop__item:focus:after {
   transform: scaleX(1);
 }
 
