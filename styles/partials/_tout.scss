@@ -1,3 +1,4 @@
+/* GENERAL TOUT (COMPONENT) STYLES */
 .tout {
   padding: 5rem 0;
   background-color: #fff;
@@ -106,10 +107,12 @@
   }
 }
 
+/*ABOUT US SECTION*/
 .tout--about-us {
   padding: 0;
 }
 
+/* SERVICES SECTION */
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -161,6 +164,8 @@
   background-color: $light-blue;
 }
 
+/* TESTIMONIALS SECTION */
+
 .tout--testimonials {
   background-color: $main-black;
   & .tout-blurb {
@@ -202,6 +207,7 @@
   }
 }
 
+/* SERVICES (2) SECTION */
 .tout--services {
   & .tout-blurb--small {
     @media (min-width: $tablet) {
@@ -230,9 +236,13 @@
   @extend .tout-tile__heading--design--analytics;
 }
 
+/* CONTACT SECTION */
+
 .tout--contact {
   background-color: $light-blue;
 }
+
+/* TEAM SECTION */
 
 .team-tiles {
   display: flex;

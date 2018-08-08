@@ -132,6 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* TYPOGRAPHY */
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 4rem;
@@ -259,6 +260,7 @@ h3 {
   line-height: 2; }
 
 /*GENERAL*/
+/* GENERAL STYLING */
 html {
   font-size: 62.5%; }
   @media (min-width: 1600px) {
@@ -305,7 +307,7 @@ li {
 .button {
   padding: 10px 25px;
   background-color: #0e5f88;
-  color: #efeeee;
+  color: #dfdede;
   border-radius: 6px;
   display: inline-block;
   -webkit-transition: background-color 300ms ease;
@@ -326,6 +328,7 @@ li {
   color: #1d1d1d; }
 
 /*HEADER*/
+/* HEADER */
 nav {
   background-color: #fff;
   padding: 1rem 0;
@@ -482,6 +485,7 @@ nav {
         flex-basis: 100%; } }
 
 /*MAIN CSS*/
+/* GENERAL TOUT (COMPONENT) STYLES */
 .tout {
   padding: 5rem 0;
   background-color: #fff;
@@ -616,9 +620,11 @@ nav {
       -ms-flex: 1 0 50%;
       flex: 1 0 50%; } }
 
+/*ABOUT US SECTION*/
 .tout--about-us {
   padding: 0; }
 
+/* SERVICES SECTION */
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,6 +684,7 @@ nav {
 .feature__tile:focus {
   background-color: #8ecceb; }
 
+/* TESTIMONIALS SECTION */
 .tout--testimonials {
   background-color: #1d1d1d; }
   .tout--testimonials .tout-blurb {
@@ -721,6 +728,7 @@ nav {
     max-width: 150px;
     position: relative; }
 
+/* SERVICES (2) SECTION */
 @media (min-width: 500px) {
   .tout--services .tout-blurb--small {
     width: 70%;
@@ -740,9 +748,11 @@ nav {
 .tout-tile__heading--analytics::before {
   content: '2.'; }
 
+/* CONTACT SECTION */
 .tout--contact {
   background-color: #8ecceb; }
 
+/* TEAM SECTION */
 .team-tiles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -811,6 +821,7 @@ nav {
   visibility: visible;
   opacity: 1; }
 
+/* GALLERY SECTION */
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -919,6 +930,7 @@ nav {
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-9.jpeg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/image-9.jpeg); }
 
+/* FORM SECTION */
 .contact__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -952,6 +964,7 @@ nav {
     opacity: 1; }
 
 /*FOOTER*/
+/* FOOTER */
 footer {
   background-color: #1d1d1d;
   color: #fff;

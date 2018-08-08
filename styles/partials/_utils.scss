@@ -25,6 +25,11 @@ $large-desktop: 1280px;
   left: $left;
 }
 
+@mixin theme($bgc, $color) {
+  background-color: $bgc;
+  color: $color;
+}
+
 //GALLERY TILES 
 
 $gallery-tile-1: url(../assets/image-6.jpeg);

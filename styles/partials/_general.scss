@@ -1,3 +1,4 @@
+/* GENERAL STYLING */
 html {
   font-size: 62.5%;
   @media (min-width: 1600px) {
@@ -53,14 +54,12 @@ li {
 
 .button {
   padding: 10px 25px;
-  background-color: $dark-blue;
-  color: $blue-button-font;
+  @include theme($dark-blue, $text-grey);
   border-radius: 6px;
   display: inline-block;
   transition: background-color 300ms ease;
   &--black {
-    background-color: $main-black;
-    color: #fff;
+    @include theme($main-black, #fff);
   }
   &--borderless {
     border: none;
