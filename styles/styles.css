@@ -332,7 +332,8 @@ li {
 nav {
   background-color: #fff;
   padding: 1rem 0;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
   @media (min-width: 850px) {
     nav {
       background-color: transparent;
@@ -372,7 +373,7 @@ nav {
 
 .nav--mobile {
   position: absolute;
-  top: 100%;
+  top: calc(100% - 51px);
   right: 0;
   bottom: 0;
   left: 0;
@@ -392,9 +393,10 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   opacity: 0;
-  -webkit-transition: height 600ms ease, opacity 300ms ease;
-  -o-transition: height 600ms ease, opacity 300ms ease;
-  transition: height 600ms ease, opacity 300ms ease; }
+  visibility: hidden;
+  -webkit-transition: height 600ms ease, opacity 800ms ease, visibility 600ms linear;
+  -o-transition: height 600ms ease, opacity 800ms ease, visibility 600ms linear;
+  transition: height 600ms ease, opacity 800ms ease, visibility 600ms linear; }
   .nav--mobile__item {
     padding-bottom: 1.5rem; }
 
@@ -403,7 +405,9 @@ nav {
 
 #mobile-nav__toggle:checked ~ .nav--mobile {
   height: 100vh;
-  opacity: 1; }
+  visibility: visible;
+  opacity: 1;
+  z-index: -1; }
 
 .nav--desktop {
   display: none; }

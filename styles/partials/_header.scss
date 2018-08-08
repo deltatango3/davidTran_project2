@@ -3,6 +3,7 @@ nav {
   background-color: #fff;
   padding: 1rem 0;
   position: relative;
+  z-index: 10;
   @media (min-width: $desktop) {
     background-color: transparent;
     position: absolute;
@@ -38,7 +39,7 @@ nav .logo {
 }
 
 .nav--mobile {
-  @include position(100%, 0, 0, 0);
+  @include position(calc(100% - 51px), 0, 0, 0);
   background-color: #fff;
   height: 0;
   display: flex;
@@ -46,7 +47,8 @@ nav .logo {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: height 600ms ease, opacity 300ms ease;
+  visibility: hidden;
+  transition: height 600ms ease, opacity 800ms ease, visibility 600ms linear;
   &__item {
     padding-bottom: 1.5rem;
   }
@@ -57,10 +59,10 @@ nav .logo {
     content: '\2573';
   }
   &~ .nav--mobile {
-    // display: flex;
     height: 100vh;
-    // min-height: 400px;
+    visibility: visible;
     opacity: 1;
+    z-index: -1;
   }
 }
 
