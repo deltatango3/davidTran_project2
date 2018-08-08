@@ -51,6 +51,8 @@ nav .logo {
   }
 }
 
+
+
 #mobile-nav__toggle:checked {
   &+label::after {
     content: '\2573';
@@ -71,6 +73,21 @@ nav .logo {
     align-items: center;
     flex: 1 2 70%;
   }
+  &__item {
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 2px solid $main-black;
+      transform: scaleX(0);
+      transition: transform 300ms ease-in-out;
+    }
+  }
+}
+
+/* HOVER */
+
+.nav--desktop__item:hover .nav--desktop__item::after {
+  transform: scaleX(1);
 }
 
 .header__hero {
