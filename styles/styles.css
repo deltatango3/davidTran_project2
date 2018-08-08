@@ -477,9 +477,6 @@ nav {
       height: 90vh;
       background: url(../assets/image-1.jpeg) no-repeat center;
       background-size: cover; } }
-  .header__hero__heading--small {
-    display: block;
-    margin: 1.375rem 0; }
   .header__hero__wrapper {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 80%;
@@ -488,6 +485,9 @@ nav {
       .header__hero__wrapper {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%; } }
+  .header__hero__heading--small {
+    display: block;
+    margin: 1.375rem 0; }
 
 /*MAIN CSS*/
 /* GENERAL TOUT (COMPONENT) STYLES */
