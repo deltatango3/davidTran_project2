@@ -373,7 +373,7 @@ nav {
 
 .nav--mobile {
   position: absolute;
-  top: calc(100% - 51px);
+  top: calc(100% - 52px);
   right: 0;
   bottom: 0;
   left: 0;
