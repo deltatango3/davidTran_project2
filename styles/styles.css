@@ -845,10 +845,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: #dfdede;
-    -webkit-transition: visibility 300ms ease, opacity 300ms linear;
-    -o-transition: visibility 300ms ease, opacity 300ms linear;
-    transition: visibility 300ms ease, opacity 300ms linear; }
+    color: #dfdede; }
     @media (min-width: 500px) {
       .gallery__item {
         -ms-flex-preferred-size: 50%;
@@ -895,12 +892,12 @@ nav {
       border: 1px solid #dfdede;
       border-radius: 10px;
       padding: 3rem 1rem;
-      -webkit-transition: visibility 300ms ease, opacity 300ms linear;
-      -o-transition: visibility 300ms ease, opacity 300ms linear;
-      transition: visibility 300ms ease, opacity 300ms linear; }
+      -webkit-transition: opacity 300ms linear;
+      -o-transition: opacity 300ms linear;
+      transition: opacity 300ms linear; }
       @media (min-width: 850px) {
         .gallery__item__content {
-          visibility: none;
+          visibility: hidden;
           opacity: 0; } }
 
 /* HOVER */
