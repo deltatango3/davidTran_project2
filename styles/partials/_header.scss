@@ -40,11 +40,12 @@ nav .logo {
   @include position(100%, 0, 0, 0);
   background-color: #fff;
   height: 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0;
+  transition: height 600ms ease, opacity 300ms ease;
   &__item {
     padding-bottom: 1.5rem;
   }
@@ -55,9 +56,9 @@ nav .logo {
     content: '\2573';
   }
   &~ .nav--mobile {
-    display: flex;
+    // display: flex;
     height: 100vh;
-    min-height: 400px;
+    // min-height: 400px;
     opacity: 1;
   }
 }
@@ -93,7 +94,7 @@ nav .logo {
     margin: 1.375rem 0;  
   }
   &__wrapper {
-    flex: 0 0 50%;
+    flex: 0 0 80%;
     @media (min-width: $tablet) {
       flex-basis: 100%;
     }

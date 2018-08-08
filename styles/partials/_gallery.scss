@@ -17,7 +17,7 @@
     @media (min-width: $desktop) {
       flex-basis: 25%;
     }
-     &--1 {
+    &--1 {
       background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $gallery-tile-1;
       @media (min-width: $desktop) {
         background-image: $gallery-tile-1;
